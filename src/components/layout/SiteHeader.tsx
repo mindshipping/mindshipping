@@ -12,6 +12,7 @@ const navItems = [
   { href: "/sarah-chen", label: "Profiles" },
 ];
 
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,25 +79,47 @@ export function SiteHeader() {
       </header>
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-gradient-to-br from-[#03030a]/85 via-[#050616]/80 to-[#04140f]/85 backdrop-blur-md transition-opacity duration-300 md:hidden",
+          "fixed inset-0 z-40 bg-[#07050d]/65 transition-opacity duration-300 md:hidden",
           isMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
         )}
         onClick={() => setIsMenuOpen(false)}
         aria-hidden
       />
-      <div
+      <aside
         className={cn(
-          "fixed top-24 left-1/2 z-50 w-[90vw] max-w-sm -translate-x-1/2 transform rounded-[32px] border border-white/10 bg-gradient-to-br from-[#11152a]/95 via-[#0c1722]/95 to-[#04231a]/95 p-6 shadow-[0_35px_80px_rgba(3,3,6,0.55)] ring-1 ring-white/5 transition-all duration-300 md:hidden",
-          isMenuOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-3 opacity-0",
+          "glass-surface fixed inset-y-0 left-0 z-50 flex w-[82vw] max-w-xs flex-col rounded-r-[32px] border border-white/15 border-l-transparent bg-[#373643]/90 px-6 pb-8 pt-10 shadow-[0_25px_80px_rgba(8,14,20,0.45)] backdrop-blur-2xl transition-transform duration-300 md:hidden",
+          isMenuOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
-        <nav className="flex flex-col gap-4 text-lg text-white/85">
+        <div className="flex items-center justify-between">
+          <Link href="/" onClick={handleNavClick} className="flex flex-col text-sm uppercase tracking-[0.3em] text-white/60">
+            Mind<span className="text-lg tracking-normal text-white">Shipping</span>
+          </Link>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen(false)}
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70"
+          >
+            Close
+          </button>
+        </div>
+        <nav className="mt-8 flex flex-col gap-2 text-base text-white/85">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} onClick={handleNavClick}>
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={handleNavClick}
+              className={cn(
+                "rounded-2xl px-4 py-3 transition",
+                pathname === item.href ? "bg-white/30 text-[#0c1018]" : "hover:bg-white/20 hover:text-[#0c1018]",
+              )}
+            >
               {item.label}
             </Link>
           ))}
-          <div className="h-px bg-white/10" />
+        </nav>
+        <div className="mt-auto flex flex-col gap-3 border-t border-white/20 pt-6 text-sm text-white/70">
+          <p>Short on time? Hop back into your studio.</p>
           <Link
             href="/login"
             onClick={handleNavClick}
@@ -104,8 +127,8 @@ export function SiteHeader() {
           >
             Sign in
           </Link>
-        </nav>
-      </div>
+        </div>
+      </aside>
     </>
   );
 }
