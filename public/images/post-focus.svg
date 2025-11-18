@@ -1,0 +1,13 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Focus rituals cover">
+  <defs>
+    <linearGradient id="focus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18cb96" />
+      <stop offset="100%" stop-color="#373643" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="40" fill="#2a2933" />
+  <circle cx="520" cy="90" r="120" fill="url(#focus)" opacity="0.4" />
+  <circle cx="160" cy="260" r="140" fill="url(#focus)" opacity="0.7" />
+  <path d="M80 140h480" stroke="#ffffff22" stroke-width="2" stroke-linecap="round" />
+  <path d="M80 190h480" stroke="#ffffff11" stroke-width="2" stroke-linecap="round" />
+</svg>

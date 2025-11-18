@@ -1,0 +1,11 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sarah avatar">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18cb96" />
+      <stop offset="100%" stop-color="#8f6fff" />
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="32" fill="#2f2e3a" />
+  <circle cx="48" cy="38" r="18" fill="url(#grad)" opacity="0.85" />
+  <rect x="18" y="56" width="60" height="26" rx="13" fill="url(#grad)" opacity="0.6" />
+</svg>

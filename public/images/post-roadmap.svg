@@ -1,0 +1,12 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calm roadmap cover">
+  <defs>
+    <linearGradient id="roadmap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8f6fff" />
+      <stop offset="100%" stop-color="#18cb96" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="40" fill="#2d2b37" />
+  <rect x="120" y="80" width="400" height="40" rx="20" fill="#ffffff12" />
+  <rect x="160" y="150" width="320" height="40" rx="20" fill="#ffffff20" />
+  <rect x="100" y="220" width="360" height="40" rx="20" fill="url(#roadmap)" />
+</svg>
