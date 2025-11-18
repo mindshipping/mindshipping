@@ -22,7 +22,7 @@ export function SiteHeader() {
     <>
       <header className="glass-surface sticky top-4 z-30 mx-auto flex w-full max-w-6xl items-center justify-between rounded-3xl px-6 py-4">
         <Link href="/" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-white">
-          <Image src="/logo-mindshipping.svg" alt="MindShipping logo" width={28} height={28} />
+          <Image src="/mindshippinglogo.png" alt="MindShipping logo" width={36} height={36} className="rounded-lg" />
           <span>
             Mind<span className="text-brand">Shipping</span>
           </span>

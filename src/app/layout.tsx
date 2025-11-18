@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     template: "%s · MindShipping",
   },
   description: "MindShipping — Where Tech Minds Connect & Share. A platform for tech enthusiasts and experts to publish insights, exchange ideas, and build together.",
+  icons: {
+    icon: "/mindshippinglogo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

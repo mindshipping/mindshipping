@@ -1,16 +1,18 @@
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MindShipping icon">
-  <defs>
-    <linearGradient id="ms-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#18cb96" />
-      <stop offset="100%" stop-color="#7c5cfc" />
-    </linearGradient>
-  </defs>
-  <rect width="256" height="256" rx="72" fill="#2c2b37" />
-  <path
-    d="M64 148c32-40 96-40 128 0l-16 20c-22-26-74-26-96 0z"
-    fill="url(#ms-grad)"
-    opacity="0.9"
-  />
-  <circle cx="96" cy="100" r="32" fill="url(#ms-grad)" opacity="0.8" />
-  <circle cx="168" cy="116" r="28" fill="#18cb96" opacity="0.6" />
+<svg width="256" height="307" viewBox="0 0 256 307" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MindShipping icon">
+  <rect width="256" height="307" fill="#373643" />
+  
+  <!-- S rotated 90° - infinity/head shape -->
+  <path d="M89.6 51.2 C89.6 32, 102.4 19.2, 121.6 19.2 C140.8 19.2, 153.6 32, 153.6 51.2 C153.6 70.4, 140.8 83.2, 121.6 83.2 C102.4 83.2, 89.6 96, 89.6 115.2 C89.6 134.4, 102.4 147.2, 121.6 147.2 C140.8 147.2, 153.6 134.4, 153.6 115.2" 
+        stroke="#18cb96" 
+        stroke-width="18" 
+        fill="none" 
+        stroke-linecap="round"
+        transform="rotate(90 121.6 83.2)"/>
+  
+  <!-- M as person body/legs - slimmer with longer legs -->
+  <path d="M76.8 153.6 L76.8 281.6 M76.8 153.6 L128 243.2 M179.2 153.6 L128 243.2 M179.2 153.6 L179.2 281.6" 
+        stroke="#18cb96" 
+        stroke-width="14" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
 </svg>

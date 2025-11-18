@@ -1,0 +1,18 @@
+<svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- S rotated 90° positioned above M to form infinity symbol (head) + person (body) -->
+  
+  <!-- S rotated 90° - creates infinity/head shape -->
+  <path d="M14 8 C14 5, 16 3, 19 3 C22 3, 24 5, 24 8 C24 11, 22 13, 19 13 C16 13, 14 15, 14 18 C14 21, 16 23, 19 23 C22 23, 24 21, 24 18" 
+        stroke="#18cb96" 
+        stroke-width="2.8" 
+        fill="none" 
+        stroke-linecap="round"
+        transform="rotate(90 19 13)"/>
+  
+  <!-- M as person body/legs - slimmer with longer legs -->
+  <path d="M12 24 L12 44 M12 24 L20 38 M28 24 L20 38 M28 24 L28 44" 
+        stroke="#18cb96" 
+        stroke-width="2.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>

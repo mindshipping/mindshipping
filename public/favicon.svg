@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Favicon version - simplified and bolder -->
+  <rect width="64" height="64" rx="12" fill="#373643"/>
+  <rect x="2" y="2" width="60" height="60" rx="10" stroke="#18cb96" stroke-width="2"/>
+  
+  <!-- Bold M -->
+  <path d="M16 22 L16 42 M16 22 L24 34 M24 34 L32 22 M32 22 L32 42" 
+        stroke="#18cb96" 
+        stroke-width="3.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Bold S -->
+  <path d="M38 26 C38 23 40 22 42 22 C44 22 46 23 46 26 C46 29 44 30 42 30 C40 30 38 31 38 34 C38 37 40 38 42 38 C44 38 46 37 46 34" 
+        stroke="#18cb96" 
+        stroke-width="3.5" 
+        stroke-linecap="round" 
+        fill="none"/>
+</svg>

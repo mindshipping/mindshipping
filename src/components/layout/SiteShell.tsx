@@ -13,9 +13,20 @@ export function SiteShell({ children }: { children: ReactNode }) {
       </div>
       <Link
         href="/settings"
-        className="fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-semibold text-[#111] shadow-[0_15px_35px_rgba(24,203,150,0.35)] transition hover:bg-brand/90"
+        className="group fixed bottom-8 right-8 z-30 flex items-center gap-3 rounded-full bg-[#373643] px-7 py-4 text-base font-semibold text-[#18cb96] shadow-[0_8px_30px_rgba(24,203,150,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_rgba(255,255,255,0.4)] active:scale-95"
       >
-        ✍️ Write
+        <svg 
+          className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="2.5" 
+          strokeLinecap="round" 
+          strokeLinejoin="round" 
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+        </svg>
+        <span>Write</span>
       </Link>
     </div>
   );
