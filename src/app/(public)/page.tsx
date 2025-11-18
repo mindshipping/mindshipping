@@ -14,13 +14,12 @@ export default async function HomePage() {
     <div className="flex flex-col gap-10">
       <section className="glass-surface grid gap-6 rounded-[32px] p-8 text-white lg:grid-cols-[2fr,1fr]">
         <div className="flex flex-col gap-4">
-          <p className="text-sm uppercase tracking-[0.3em] text-brand">Open writing platform</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-brand">Tech Community Platform</p>
           <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-            Publish long-form ideas for everyone—not just your followers.
+            Where Tech Minds Connect & Share.
           </h1>
           <p className="text-white/70">
-            MindShipping is a public blog collective where builders draft in public, readers respond with depth,
-            and every story can spark the next product idea.
+            Join a growing community of developers, engineers, and tech enthusiasts. Share deep-dive tutorials, architectural insights, and breakthrough discoveries. Connect with peers who speak your language.
           </p>
           <div className="flex flex-wrap gap-2 pt-3">
             {FEATURED_TAGS.map((tag) => (
@@ -33,13 +32,13 @@ export default async function HomePage() {
         <Card className="gradient-ring relative flex flex-col gap-4">
           <HeroLottie />
           <div>
-            <p className="text-sm text-white/60">Trending on MindShipping</p>
+            <p className="text-sm text-white/60">Trending in Tech</p>
             <h3 className="text-2xl font-semibold text-white">{MOCK_POSTS[0]?.title}</h3>
             <p className="text-sm text-white/70">
-              {MOCK_POSTS[0]?.excerpt} Keep reading for tactics straight from working makers.
+              {MOCK_POSTS[0]?.excerpt} Dive into real-world solutions from experienced engineers.
             </p>
             <Link href={`/posts/${MOCK_POSTS[0]?.id}`} className="text-sm font-semibold text-brand">
-              Continue the story →
+              Read the full article →
             </Link>
           </div>
         </Card>

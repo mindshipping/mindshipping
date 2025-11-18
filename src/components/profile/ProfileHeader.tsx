@@ -17,12 +17,12 @@ export function ProfileHeader({ user, isOwner }: { user: User; isOwner?: boolean
         {isOwner && <span className="rounded-full border border-brand/40 px-4 py-1 text-sm text-brand">Edit profile</span>}
       </div>
       <p className="mt-6 max-w-2xl text-white/70">
-        {user.bio} Their MindShipping profile stays open so anyone can read, react, and remix the work in public.
+        {user.bio} They share technical insights and connect with the MindShipping community to advance the tech ecosystem together.
       </p>
       <div className="mt-6 flex flex-wrap gap-6 text-sm text-white/60">
         <span>{formatNumber(user.stats.followers)} followers</span>
         <span>{formatNumber(user.stats.following)} following</span>
-        <span>{user.stats.posts} essays</span>
+        <span>{user.stats.posts} articles</span>
         {user.social?.location && <span>{user.social.location}</span>}
         {user.social?.website && (
           <a href={user.social.website} target="_blank" rel="noreferrer" className="text-brand">

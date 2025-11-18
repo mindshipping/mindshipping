@@ -15,16 +15,16 @@ const baseUsers: Record<string, User> = {
     username: "sarah-chen",
     name: "Sarah Chen",
   avatarUrl: "/images/avatar-sarah.svg",
-    headline: "Designing mindful experiences",
-    bio: "Product designer writing about focus, deep work, and mindful productivity.",
+    headline: "Senior Frontend Architect",
+    bio: "Building scalable React systems and sharing patterns for modern web development.",
     stats: {
       followers: 18400,
       following: 320,
       posts: 42,
     },
     social: {
-      website: "https://mindfulpixels.com",
-      location: "Amsterdam, NL",
+      website: "https://sarahchen.dev",
+      location: "San Francisco, CA",
     },
   },
   "lucas-adebayor": {
@@ -32,8 +32,8 @@ const baseUsers: Record<string, User> = {
     username: "lucas-adebayor",
     name: "Lucas Adebayo",
   avatarUrl: "/images/avatar-lucas.svg",
-    headline: "Engineering calm systems",
-    bio: "Building calm software teams. I write about DX, leadership, and humane processes.",
+    headline: "DevOps & Cloud Infrastructure",
+    bio: "Automating deployments, optimizing cloud costs, and building resilient distributed systems.",
     stats: {
       followers: 22100,
       following: 410,
@@ -49,15 +49,15 @@ const baseUsers: Record<string, User> = {
     username: "maya-rojas",
     name: "Maya Rojas",
   avatarUrl: "/images/avatar-maya.svg",
-    headline: "Stories about learning in public",
-    bio: "Indie hacker documenting the long road to sustainable products.",
+    headline: "Full-Stack Engineer & Tech Blogger",
+    bio: "Building SaaS products and sharing lessons on scaling, architecture, and startup engineering.",
     stats: {
       followers: 9700,
       following: 180,
       posts: 31,
     },
     social: {
-      website: "https://mayarojas.com",
+      website: "https://mayarojas.dev",
       location: "Austin, TX",
     },
   },
@@ -66,7 +66,7 @@ const baseUsers: Record<string, User> = {
 const comments: Comment[] = [
   {
     id: "c1",
-    content: "Loved the cadence section—especially the rituals you use to protect deep work.",
+    content: "Great breakdown of the async patterns—especially the parts on maintaining focus during code reviews.",
     createdAt: "2025-11-10T09:00:00.000Z",
     likes: 42,
     author: {
@@ -93,15 +93,15 @@ const comments: Comment[] = [
 export const MOCK_POSTS: Post[] = [
   {
     id: "focus-rituals",
-    title: "Focus Rituals For Teams That Build Calmly",
+    title: "Building Focus Rituals for Deep Technical Work",
     excerpt:
-      "How our studio keeps momentum without sacrificing deep work or team wellbeing.",
+      "How I structure my day for uninterrupted coding sessions and architectural thinking.",
     content:
-      "Designing calm software requires deliberate rituals. In this playbook you'll find the exact async rhythms, reflection prompts, and goal-setting cadences our studio runs every quarter...",
+      "Sustaining focus in complex technical work requires deliberate rituals. In this guide, you'll learn the exact async patterns, reflection prompts, and goal-setting frameworks I use every quarter...",
   coverImage: "/images/post-focus.svg",
     publishedAt: "2025-11-07T08:00:00.000Z",
     readingTime: "6 min read",
-    tags: ["process", "teams", "focus"],
+    tags: ["productivity", "engineering", "workflow"],
     likes: 482,
     isLiked: true,
     comments,
@@ -115,15 +115,15 @@ export const MOCK_POSTS: Post[] = [
   },
   {
     id: "calm-roadmaps",
-    title: "Calm Roadmaps: Less Demos, More Clarity",
+    title: "Scalable Architecture: From Monolith to Microservices",
     excerpt:
-      "A lighter alternative to sprint reviews that still keeps leadership aligned.",
+      "A practical guide to breaking down monoliths without disrupting production.",
     content:
-      "Roadmaps can either be anxiety machines or clarity amplifiers. By reducing demo thrash and focusing on narrative updates, we've unlocked better async alignment...",
+      "Migrating architecture requires careful planning. By decomposing services gradually and focusing on domain boundaries, we've achieved better scalability without downtime...",
   coverImage: "/images/post-roadmap.svg",
     publishedAt: "2025-11-02T15:30:00.000Z",
     readingTime: "4 min read",
-    tags: ["leadership", "strategy"],
+    tags: ["architecture", "microservices", "devops"],
     likes: 301,
     comments: comments.slice(0, 1),
     author: {
@@ -136,15 +136,15 @@ export const MOCK_POSTS: Post[] = [
   },
   {
     id: "learning-out-loud",
-    title: "Learning Out Loud Without The Burnout",
+    title: "Building in Public: A Developer's Journey",
     excerpt:
-      "Systems I use to share work-in-progress without feeling like a content machine.",
+      "How documenting my projects publicly accelerated my learning and career growth.",
     content:
-      "The algorithm rewards volume, but thoughtful cadence keeps you sane. Here's how I batch, repurpose, and protect my curiosity time while still publishing every week...",
+      "Sharing your work-in-progress builds credibility and attracts opportunities. Here's how I document projects, handle feedback, and balance transparency with shipping fast...",
   coverImage: "/images/post-learning.svg",
     publishedAt: "2025-10-28T10:15:00.000Z",
     readingTime: "7 min read",
-    tags: ["creator", "indiehacking"],
+    tags: ["career", "learning", "opensource"],
     likes: 217,
     comments: [],
     author: {
@@ -159,4 +159,4 @@ export const MOCK_POSTS: Post[] = [
 
 export const MOCK_USERS: User[] = Object.values(baseUsers);
 
-export const FEATURED_TAGS = ["focus", "productivity", "leadership", "mindful dev"];
+export const FEATURED_TAGS = ["web3", "ai/ml", "cloud", "devops", "frontend", "backend"];

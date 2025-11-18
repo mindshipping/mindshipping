@@ -6,10 +6,10 @@ const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
 
 export const metadata: Metadata = {
   title: {
-    default: "MindShipping",
+    default: "MindShipping — Where Tech Minds Connect & Share",
     template: "%s · MindShipping",
   },
-  description: "MindShipping — mindful systems and stories for calmer product teams.",
+  description: "MindShipping — Where Tech Minds Connect & Share. A platform for tech enthusiasts and experts to publish insights, exchange ideas, and build together.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -134,7 +134,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="mt-auto flex flex-col gap-3 border-t border-white/20 pt-6 text-sm text-white/70">
-          <p>Short on time? Hop back into your studio.</p>
+          <p>Ready to share your expertise?</p>
           <Link
             href="/login"
             onClick={handleNavClick}

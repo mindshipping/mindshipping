@@ -10,13 +10,13 @@ export default function LoginPage() {
           Welcome back
         </span>
         <div>
-          <h1 className="text-3xl font-semibold">Log back into the stream</h1>
-          <p className="text-sm text-white/60">Pick up drafts, respond to readers, and keep the MindShipping feed alive.</p>
+          <h1 className="text-3xl font-semibold">Reconnect with the community</h1>
+          <p className="text-sm text-white/60">Continue sharing your tech insights and learning from expert peers.</p>
         </div>
       </div>
       <label className="text-sm text-white/70">
         Email
-        <Input type="email" placeholder="you@studio.com" className="mt-2" />
+        <Input type="email" placeholder="dev@yourcompany.com" className="mt-2" />
       </label>
       <label className="text-sm text-white/70">
         Password
