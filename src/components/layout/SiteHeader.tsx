@@ -45,9 +45,24 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <Link
             href="/login"
-            className="hidden rounded-2xl px-5 py-2.5 text-sm font-medium text-white/80 transition hover:text-white md:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-[#18cb96] px-5 py-2.5 text-sm font-semibold text-[#04150f] shadow-[0_12px_30px_rgba(24,203,150,0.45)] transition hover:bg-[#13b484] hover:shadow-[0_18px_35px_rgba(24,203,150,0.55)] md:inline-flex"
           >
-            Sign in
+            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#0b3326]/40">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                className="h-3.5 w-3.5 text-[#04150f]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 13.5c2.485 0 4.5-2.015 4.5-4.5S14.485 4.5 12 4.5 7.5 6.515 7.5 9 9.515 13.5 12 13.5Z" />
+                <path d="M6 19.5c1.2-2.1 3.6-3.5 6-3.5s4.8 1.4 6 3.5" />
+              </svg>
+            </span>
+            <span>Sign in</span>
           </Link>
           <button
             type="button"

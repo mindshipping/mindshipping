@@ -4,6 +4,7 @@ import { FEATURED_TAGS, MOCK_POSTS } from "@/lib/constants";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { PostCard } from "@/components/posts/PostCard";
+import { HeroLottie } from "@/components/hero/HeroLottie";
 
 export const revalidate = 60;
 
@@ -29,15 +30,18 @@ export default async function HomePage() {
             ))}
           </div>
         </div>
-        <Card className="gradient-ring relative flex flex-col gap-3">
-          <p className="text-sm text-white/60">Trending on MindShipping</p>
-          <h3 className="text-2xl font-semibold text-white">{MOCK_POSTS[0]?.title}</h3>
-          <p className="text-sm text-white/70">
-            {MOCK_POSTS[0]?.excerpt} Keep reading for tactics straight from working makers.
-          </p>
-          <Link href={`/posts/${MOCK_POSTS[0]?.id}`} className="text-sm font-semibold text-brand">
-            Continue the story →
-          </Link>
+        <Card className="gradient-ring relative flex flex-col gap-4">
+          <HeroLottie />
+          <div>
+            <p className="text-sm text-white/60">Trending on MindShipping</p>
+            <h3 className="text-2xl font-semibold text-white">{MOCK_POSTS[0]?.title}</h3>
+            <p className="text-sm text-white/70">
+              {MOCK_POSTS[0]?.excerpt} Keep reading for tactics straight from working makers.
+            </p>
+            <Link href={`/posts/${MOCK_POSTS[0]?.id}`} className="text-sm font-semibold text-brand">
+              Continue the story →
+            </Link>
+          </div>
         </Card>
       </section>
 
