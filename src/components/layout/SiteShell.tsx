@@ -12,7 +12,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <SiteFooter />
       </div>
       <Link
-        href="/settings"
+        href="/login"
         className="group fixed bottom-8 right-8 z-30 flex items-center gap-3 rounded-full bg-[#373643] px-7 py-4 text-base font-semibold text-[#18cb96] shadow-[0_8px_30px_rgba(24,203,150,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_rgba(255,255,255,0.4)] active:scale-95"
       >
         <svg 
