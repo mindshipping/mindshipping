@@ -1,46 +1,14 @@
 # MindShipping Frontend
 
-Minimal App Router experience for the MindShipping blog/community. All content runs on mocked data today so we can focus on nailing the UI/UX and routing while the backend ships later.
+Internal UI powering the MindShipping social platform. This repository stays private and is not meant for public distribution or open-source sharing.
 
-## Stack
+## How we run it
 
-- Next.js 16 (App Router)
-- TypeScript + ESLint
-- Tailwind CSS v4 with custom palette in `src/styles/globals.css`
+- Install dependencies once with `npm install`.
+- Set `NEXT_PUBLIC_BACKEND_ROOT_URL` in `.env` to whichever backend namespace you want this build to talk to (prod, staging, or local).
+- Use `npm run dev` for local work. `npm run lint` / `npm run build` are available when you need them.
 
-## Structure
+## Notes for the team
 
-```
-src/
- ├─ app/
- │   ├─ (public)/        → feed, posts, profiles
- │   ├─ (auth)/          → login + register layout
- │   └─ (dashboard)/     → creator settings
- ├─ components/          → layout, posts, profile, UI primitives
- ├─ hooks/               → auth/profile/post actions
- ├─ lib/                 → mock API/auth/utils/ws
- └─ styles/              → global theme + utilities
-```
-
-## Scripts
-
-```bash
-npm install
-npm run dev
-npm run lint
-npm run build
-```
-
-## Routes
-
-- `/` – MindShipping home feed with featured posts and tags
-- `/posts/[postId]` – Post detail with likes, comments, share CTA
-- `/[username]` – Profile page with stats + recent essays
-- `/login` & `/register` – Auth forms on standalone layout
-- `/settings` – Dashboard scaffold for upcoming creator tools
-
-## Notes
-
-- Brand colors: background `#373643`, accent `#18cb96`
-- Assets live in `public/images`; favicon comes from `src/app/icon.svg`
-- Mock data + API helpers are centralized in `src/lib/constants.ts` and `src/lib/api.ts`
+- Keep assets and brand files inside `public/` as usual.
+- Treat the `.env` file and this repo as confidential—nothing here should be published externally.
